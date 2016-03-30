@@ -1,2 +1,3 @@
-# eslint.cn
-eslint.cn  ESLint中文 ESLint 中文翻译
+## ESLint中文
+
+ESLint中文官方
