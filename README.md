@@ -1,3 +1,1 @@
-## ESLint中文
-
-ESLint中文官方
+# ESLint中文

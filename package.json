@@ -1,5 +1,5 @@
 {
-  "name": "eslint.github.io",
+  "name": "eslint.cn",
   "version": "1.0.0",
   "private": true,
   "description": "This contains the code running on eslint.org.",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eslint/eslint.github.io.git"
+    "url": "git+https://github.com/smocean/eslint.cn.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eslint/eslint.github.io/issues"
+    "url": "https://github.com/smocean/eslint.cn/issues"
   },
-  "homepage": "https://github.com/eslint/eslint.github.io#readme",
+  "homepage": "https://github.com/smocean/eslint.cn#readme",
   "dependencies": {},
   "devDependencies": {
     "browserify": "^11.0.1",

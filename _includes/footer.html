@@ -2,7 +2,6 @@
     <hr>
 
     <div class="container">
-
       <footer>
         <ul class="list-inline">
           <li><a href="https://groups.google.com/group/eslint">Mailing List</a></li>
@@ -10,13 +9,6 @@
           <li><a href="https://twitter.com/geteslint">Twitter</a></li>
           <li>Copyright &copy; 2013-2016 Nicholas C. Zakas. All rights reserved.</li>
         </ul>
-        {% if page.disablePreview != true %}
-        <div class="preview-panel">
-          <label class="radio-inline"><input type="radio" name="lang-type" value="lang-mixed" checked><span class="outer"><span class="inner"></span></span>中英文</label>
-          <label class="radio-inline"><input type="radio" name="lang-type" value="lang-zh"><span class="outer"><span class="inner"></span></span>中文</label>
-          <label class="radio-inline"><input type="radio" name="lang-type" value="lang-en"><span class="outer"><span class="inner"></span></span>英文</label>
-        </div>
-        {% endif %}
       </footer>
     </div><!-- /.container -->
 
@@ -58,11 +50,7 @@
       logos = shuffleArray(logos);
       for (var i = 0, l = logos.length; i<l; i++) {
         var logo = $('<div class="slide col-sm-4"><a href="' + logos[i].url + '"><img src="' + logos[i].src + '" alt="' + logos[i].name + '"></a></div>');
-        if (logos[i].name == 'sm.cn') {
-          $('.logos').prepend(logo);
-        } else {
           $('.logos').append(logo);
-        }
       }
 
       $('.expender').click(function() {
@@ -78,21 +66,35 @@
       {% endif %}
 
       {% if page.disablePreview != true %}
-        $('input[name=lang-type]').on('click', function() {
-            var type = $(this).val();
+        var langs = {mixed: '中英文',zh: '中文',en: '英文'};
+        var last = localStorage.getItem('lang');
 
+        if (last in langs) {
+          $('.lang-chooser').html(langs[last]); 
+          $('.doc').removeClass(function(index,clz){
+              return clz.slice(3);
+          }).addClass('lang-' + last);
+        }
+
+        $('.navbar-left').show();
+
+        $('.lang-type').on('click', function() {
+            var $this = $(this),
+                type = $this.data('lang'),
+                lang = $this.html();
+
+            localStorage.setItem('lang', type);
+
+            $('.lang-chooser').html(lang); 
             $('.doc').removeClass(function(index,clz){
                 return clz.slice(3);
-            }).addClass(type);
+            }).addClass('lang-' + type);
         });
       {% endif %}
-
     });
   </script>
   <style type="text/css">
-  #cnzz_stat_icon_1258306315 {
-    opacity: 0;
-  }
+  #cnzz_stat_icon_1258306315 {opacity: 0;}
   </style>
   <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1258306315'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1258306315'%3E%3C/script%3E"));</script>
 </body>

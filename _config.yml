@@ -1,9 +1,9 @@
-name: "ESLint - Pluggable JavaScript linter"
+name: "ESLint中文"
 exclude: [
   'node_modules',
   'vendor'
 ]
-description: "ESLint中文官网"
+description: "ESLint中文官网,ESLint中英文对照,JavaScript代码检测,JavaScript代码风格检测,JavaScript代码自动格式化"
 url: http://eslint.cn
 permalink: /blog/:year/:month/:title
 gems:
