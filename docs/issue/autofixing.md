@@ -1,7 +1,6 @@
 ---
 title: Rule auto-fixing
 layout: issue
-disablePreview: false
 ---
 
 # [Auto fixing](https://github.com/eslint/eslint/issues/5329)
