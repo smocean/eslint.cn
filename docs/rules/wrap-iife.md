@@ -26,7 +26,7 @@ function () { /* side effects */ }(); // SyntaxError
 
 This rule requires all immediately-invoked function expressions to be wrapped in parentheses.
 
-因为函数语句不能立即被调用，但是函数表达式可以，创建一个立即调用的函数表达式通常的技巧是用括号直接包裹。开括号使得被包含的函数被解析成一个表达式而不是一个声明。
+该规则要求所有的立即执行函数表达式使用括号包裹起来。
 
 ## Options
 
