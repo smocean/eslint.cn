@@ -385,7 +385,7 @@ To specify globals using a comment inside of your JavaScript file, use the follo
 
 This defines two global variables, `var1` and `var2`. If you want to optionally specify that these global variables should never be written to (only read), then you can set each with a `false` flag:
 
-这里定义了两个全局变量：`var1` 和 `var2`。如果你想指定这些变量为只读的，你可以将它们设置为`false`：
+这里定义了两个全局变量：`var1` 和 `var2`。如果你想指定这些变量不应被重写（只读），你可以将它们设置为`false`：
 
 ```js
 /*global var1:false, var2:false*/
