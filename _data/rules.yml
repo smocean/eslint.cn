@@ -7,18 +7,17 @@ categories:
           enforce "for" loop update clause moving the counter in the right
           direction.
         description_zh: >-
-          enforce "for" loop update clause moving the counter in the right
-          direction.
+          强制 "for" 循环更新子句的计数器正向移动。
         fixable: false
         name: for-direction
         recommended: false
       - description: disallow `await` inside of loops
-        description_zh: disallow `await` inside of loops
+        description_zh: 禁止循环内 `await`
         fixable: false
         name: no-await-in-loop
         recommended: false
       - description: disallow comparing against -0
-        description_zh: disallow comparing against -0
+        description_zh: 禁止与 -0 比较
         fixable: false
         name: no-compare-neg-zero
         recommended: true
@@ -28,7 +27,7 @@ categories:
         name: no-cond-assign
         recommended: true
       - description: disallow the use of `console`
-        description_zh: 禁用 `console`
+        description_zh: 禁止使用 `console`
         fixable: false
         name: no-console
         recommended: true
@@ -43,7 +42,7 @@ categories:
         name: no-control-regex
         recommended: true
       - description: disallow the use of `debugger`
-        description_zh: 禁用 `debugger`
+        description_zh: 禁止使用 `debugger`
         fixable: true
         name: no-debugger
         recommended: true
@@ -129,12 +128,12 @@ categories:
         name: no-regex-spaces
         recommended: true
       - description: disallow sparse arrays
-        description_zh: 禁用稀疏数组
+        description_zh: 禁止稀疏数组
         fixable: false
         name: no-sparse-arrays
         recommended: true
       - description: disallow template literal placeholder syntax in regular strings
-        description_zh: disallow template literal placeholder syntax in regular strings
+        description_zh: 禁止常规字符串中的模板文字占位符语法
         fixable: false
         name: no-template-curly-in-string
         recommended: false
@@ -147,7 +146,7 @@ categories:
           disallow unreachable code after `return`, `throw`, `continue`, and
           `break` statements
         description_zh: >-
-          禁止在`return`、`throw`、`continue` 和 `break` 语句之后出现不可达代码
+          禁止在 `return`、`throw`、`continue` 和 `break` 语句之后出现不可达代码
         fixable: false
         name: no-unreachable
         recommended: true
@@ -157,7 +156,7 @@ categories:
         name: no-unsafe-finally
         recommended: true
       - description: disallow negating the left operand of relational operators
-        description_zh: disallow negating the left operand of relational operators
+        description_zh: 禁止取运算符左侧操作数的相反值
         fixable: true
         name: no-unsafe-negation
         recommended: true
@@ -180,7 +179,7 @@ categories:
       These rules relate to better ways of doing things to help you avoid
       problems:
     description_zh: >-
-     这些规则是关于最佳实践的，帮助你避免一些问题:
+     这些规则有关最佳实践，能帮助你避免一些问题:
     name: Best Practices
     rules:
       - description: enforce getter and setter pairs in objects
@@ -199,7 +198,7 @@ categories:
         name: block-scoped-var
         recommended: false
       - description: enforce that class methods utilize `this`
-        description_zh: enforce that class methods utilize `this`
+        description_zh: 强制类方法使用 `this`
         fixable: false
         name: class-methods-use-this
         recommended: false
@@ -244,12 +243,12 @@ categories:
         name: guard-for-in
         recommended: false
       - description: 'disallow the use of `alert`, `confirm`, and `prompt`'
-        description_zh: '禁用 `alert`、`confirm` 和 `prompt`'
+        description_zh: '禁止使用 `alert`、`confirm` 和 `prompt`'
         fixable: false
         name: no-alert
         recommended: false
       - description: disallow the use of `arguments.caller` or `arguments.callee`
-        description_zh: 禁用 `arguments.caller` 或 `arguments.callee`
+        description_zh: 禁止使用 `arguments.caller` 或 `arguments.callee`
         fixable: false
         name: no-caller
         recommended: false
@@ -287,7 +286,7 @@ categories:
         name: no-eq-null
         recommended: false
       - description: disallow the use of `eval()`
-        description_zh: 禁用 `eval()`
+        description_zh: 禁止使用 `eval()`
         fixable: false
         name: no-eval
         recommended: false
@@ -302,7 +301,7 @@ categories:
         name: no-extra-bind
         recommended: false
       - description: disallow unnecessary labels
-        description_zh: 禁用不必要的标签
+        description_zh: 禁止不必要的标签
         fixable: true
         name: no-extra-label
         recommended: false
@@ -317,7 +316,7 @@ categories:
         name: no-floating-decimal
         recommended: false
       - description: disallow assignments to native objects or read-only global variables
-        description_zh: disallow assignments to native objects or read-only global variables
+        description_zh: 禁止对原生对象或只读全局变量的分配
         fixable: false
         name: no-global-assign
         recommended: true
@@ -342,17 +341,17 @@ categories:
         name: no-invalid-this
         recommended: false
       - description: disallow the use of the `__iterator__` property
-        description_zh: 禁用 `__iterator__` 属性
+        description_zh: 禁止使用 `__iterator__` 属性
         fixable: false
         name: no-iterator
         recommended: false
       - description: disallow labeled statements
-        description_zh: 禁用标签语句
+        description_zh: 禁止标签语句
         fixable: false
         name: no-labels
         recommended: false
       - description: disallow unnecessary nested blocks
-        description_zh: 禁用不必要的嵌套块
+        description_zh: 禁止不必要的嵌套块
         fixable: false
         name: no-lone-blocks
         recommended: false
@@ -365,7 +364,7 @@ categories:
         name: no-loop-func
         recommended: false
       - description: disallow magic numbers
-        description_zh: 禁用魔术数字
+        description_zh: 禁止魔术数字
         fixable: false
         name: no-magic-numbers
         recommended: false
@@ -380,7 +379,7 @@ categories:
         name: no-multi-str
         recommended: false
       - description: disallow `new` operators outside of assignments or comparisons
-        description_zh: disallow `new` operators outside of assignments or comparisons
+        description_zh: 禁止分配或比较用途外的 `new` 操作符
         fixable: false
         name: no-new
         recommended: false
@@ -398,7 +397,7 @@ categories:
         name: no-new-wrappers
         recommended: false
       - description: disallow octal literals
-        description_zh: 禁用八进制字面量
+        description_zh: 禁止八进制字面量
         fixable: false
         name: no-octal
         recommended: true
@@ -413,7 +412,7 @@ categories:
         name: no-param-reassign
         recommended: false
       - description: disallow the use of the `__proto__` property
-        description_zh: 禁用 `__proto__` 属性
+        description_zh: 禁止使用 `__proto__` 属性
         fixable: false
         name: no-proto
         recommended: false
@@ -433,7 +432,7 @@ categories:
         name: no-return-assign
         recommended: false
       - description: disallow unnecessary `return await`
-        description_zh: disallow unnecessary `return await`
+        description_zh: 禁止不必要的 `return await`
         fixable: false
         name: no-return-await
         recommended: false
@@ -453,7 +452,7 @@ categories:
         name: no-self-compare
         recommended: false
       - description: disallow comma operators
-        description_zh: 禁用逗号操作符
+        description_zh: 禁止逗号操作符
         fixable: false
         name: no-sequences
         recommended: false
@@ -463,7 +462,7 @@ categories:
         name: no-throw-literal
         recommended: false
       - description: disallow unmodified loop conditions
-        description_zh: 禁用一成不变的循环条件
+        description_zh: 禁止一成不变的循环条件
         fixable: false
         name: no-unmodified-loop-condition
         recommended: false
@@ -473,7 +472,7 @@ categories:
         name: no-unused-expressions
         recommended: false
       - description: disallow unused labels
-        description_zh: 禁用出现未使用过的标
+        description_zh: 禁止出现未使用过的标
         fixable: true
         name: no-unused-labels
         recommended: true
@@ -488,17 +487,17 @@ categories:
         name: no-useless-concat
         recommended: false
       - description: disallow unnecessary escape characters
-        description_zh: 禁用不必要的转义字符
+        description_zh: 禁止不必要的转义字符
         fixable: false
         name: no-useless-escape
         recommended: true
       - description: disallow redundant return statements
-        description_zh: disallow redundant return statements
+        description_zh: 禁止冗余的 return 语句
         fixable: true
         name: no-useless-return
         recommended: false
       - description: disallow `void` operators
-        description_zh: 禁用 `void` 操作符
+        description_zh: 禁止 `void` 操作符
         fixable: false
         name: no-void
         recommended: false
@@ -508,12 +507,12 @@ categories:
         name: no-warning-comments
         recommended: false
       - description: disallow `with` statements
-        description_zh: 禁用 `with` 语句
+        description_zh: 禁止 `with` 语句
         fixable: false
         name: no-with
         recommended: false
       - description: require using Error objects as Promise rejection reasons
-        description_zh: require using Error objects as Promise rejection reasons
+        description_zh: 要求使用 Error 对象作为 Promise 的拒绝原因
         fixable: false
         name: prefer-promise-reject-errors
         recommended: false
@@ -526,7 +525,7 @@ categories:
         name: radix
         recommended: false
       - description: disallow async functions which have no `await` expression
-        description_zh: disallow async functions which have no `await` expression
+        description_zh: 禁止没有 `await` 表达式的 async
         fixable: false
         name: require-await
         recommended: false
@@ -585,7 +584,7 @@ categories:
         name: no-label-var
         recommended: false
       - description: disallow specified global variables
-        description_zh: 禁用特定的全局变量
+        description_zh: 禁止特定的全局变量
         fixable: false
         name: no-restricted-globals
         recommended: false
@@ -606,12 +605,12 @@ categories:
           disallow the use of undeclared variables unless mentioned in `/*global
           */` comments
         description_zh: >-
-          禁用未声明的变量，除非它们在 `/*global */` 注释中被提到
+          禁止使用未声明的变量，除非它们在 `/*global */` 注释中被提到
         fixable: false
         name: no-undef
         recommended: true
       - description: disallow initializing variables to `undefined`
-        description_zh: disallow initializing variables to `undefined`
+        description_zh: 禁止将变量初始化为 `undefined`
         fixable: true
         name: no-undef-init
         recommended: false
@@ -634,7 +633,7 @@ categories:
       These rules relate to code running in Node.js, or in browsers with
       CommonJS:
     description_zh: >-
-      这些规则是关于Node.js 或 在浏览器中使用CommonJS 的：
+      这些规则有关 Node.js 或在浏览器中使用 CommonJS：
     name: Node.js and CommonJS
     rules:
       - description: require `return` statements after callbacks
@@ -675,22 +674,22 @@ categories:
         name: no-path-concat
         recommended: false
       - description: disallow the use of `process.env`
-        description_zh: 禁用 `process.env`
+        description_zh: 禁止使用 `process.env`
         fixable: false
         name: no-process-env
         recommended: false
       - description: disallow the use of `process.exit()`
-        description_zh: 禁用 `process.exit()`
+        description_zh: 禁止使用 `process.exit()`
         fixable: false
         name: no-process-exit
         recommended: false
       - description: disallow specified modules when loaded by `require`
-        description_zh: 禁用通过 `require` 加载的指定模块
+        description_zh: 禁止通过 `require` 加载指定模块
         fixable: false
         name: no-restricted-modules
         recommended: false
       - description: disallow synchronous methods
-        description_zh: 禁用同步方法
+        description_zh: 禁止同步方法
         fixable: false
         name: no-sync
         recommended: false
@@ -698,11 +697,11 @@ categories:
       These rules relate to style guidelines, and are therefore quite
       subjective:
     description_zh: >-
-      这些规则是关于风格指南的，而且是非常主观的：
+      这些规则有关代码风格，因此相当主观：
     name: Stylistic Issues
     rules:
       - description: enforce linebreaks after opening and before closing array brackets
-        description_zh: enforce linebreaks after opening and before closing array brackets
+        description_zh: 强制在数组括号的开启与闭合之后换行
         fixable: true
         name: array-bracket-newline
         recommended: false
@@ -712,7 +711,7 @@ categories:
         name: array-bracket-spacing
         recommended: false
       - description: enforce line breaks after each array element
-        description_zh: enforce line breaks after each array element
+        description_zh: 强制在每个数组元素后换行
         fixable: true
         name: array-element-newline
         recommended: false
@@ -732,7 +731,7 @@ categories:
         name: camelcase
         recommended: false
       - description: enforce or disallow capitalization of the first letter of a comment
-        description_zh: enforce or disallow capitalization of the first letter of a comment
+        description_zh: 强制或禁止注释的首字母大写
         fixable: true
         name: capitalized-comments
         recommended: false
@@ -770,8 +769,7 @@ categories:
           require or disallow spacing between function identifiers and their
           invocations
         description_zh: >-
-          require or disallow spacing between function identifiers and their
-          invocations
+          要求或禁止函数标识符与其调用之间空格
         fixable: true
         name: func-call-spacing
         recommended: false
@@ -779,8 +777,7 @@ categories:
           require function names to match the name of the variable or property
           to which they are assigned
         description_zh: >-
-          require function names to match the name of the variable or property
-          to which they are assigned
+          要求函数名称与分配给它们的变量或属性的名称匹配
         fixable: false
         name: func-name-matching
         recommended: false
@@ -798,7 +795,7 @@ categories:
         name: func-style
         recommended: false
       - description: disallow specified identifiers
-        description_zh: 禁用指定的标识符
+        description_zh: 禁止指定的标识符
         fixable: false
         name: id-blacklist
         recommended: false
@@ -839,7 +836,7 @@ categories:
         name: keyword-spacing
         recommended: false
       - description: enforce position of line comments
-        description_zh: enforce position of line comments
+        description_zh: 强制注释行的位置
         fixable: false
         name: line-comment-position
         recommended: false
@@ -889,7 +886,7 @@ categories:
         name: max-statements-per-line
         recommended: false
       - description: enforce newlines between operands of ternary expressions
-        description_zh: enforce newlines between operands of ternary expressions
+        description_zh: 强制在三元表达式的操作数之间换行
         fixable: false
         name: multiline-ternary
         recommended: false
@@ -909,17 +906,17 @@ categories:
         name: newline-per-chained-call
         recommended: false
       - description: disallow `Array` constructors
-        description_zh: 禁用 `Array` 构造函数
+        description_zh: 禁止 `Array` 构造函数
         fixable: false
         name: no-array-constructor
         recommended: false
       - description: disallow bitwise operators
-        description_zh: 禁用按位运算符
+        description_zh: 禁止按位运算符
         fixable: false
         name: no-bitwise
         recommended: false
       - description: disallow `continue` statements
-        description_zh: 禁用 `continue` 语句
+        description_zh: 禁止 `continue` 语句
         fixable: false
         name: no-continue
         recommended: false
@@ -944,7 +941,7 @@ categories:
         name: no-mixed-spaces-and-tabs
         recommended: true
       - description: disallow use of chained assignment expressions
-        description_zh: disallow use of chained assignment expressions
+        description_zh: 禁止使用链式赋值表达式
         fixable: false
         name: no-multi-assign
         recommended: false
@@ -954,42 +951,42 @@ categories:
         name: no-multiple-empty-lines
         recommended: false
       - description: disallow negated conditions
-        description_zh: 禁用否定的表达式
+        description_zh: 禁止否定的表达式
         fixable: false
         name: no-negated-condition
         recommended: false
       - description: disallow nested ternary expressions
-        description_zh: 禁用嵌套的三元表达式
+        description_zh: 禁止嵌套的三元表达式
         fixable: false
         name: no-nested-ternary
         recommended: false
       - description: disallow `Object` constructors
-        description_zh: 禁用 `Object` 的构造函数
+        description_zh: 禁止 `Object` 的构造函数
         fixable: false
         name: no-new-object
         recommended: false
       - description: disallow the unary operators `++` and `--`
-        description_zh: 禁用一元操作符 `++` 和 `--`
+        description_zh: 禁止一元操作符 `++` 和 `--`
         fixable: false
         name: no-plusplus
         recommended: false
       - description: disallow specified syntax
-        description_zh: 禁用特定的语法
+        description_zh: 禁止特定的语法
         fixable: false
         name: no-restricted-syntax
         recommended: false
       - description: disallow all tabs
-        description_zh: disallow all tabs
+        description_zh: 禁止所有制表符
         fixable: false
         name: no-tabs
         recommended: false
       - description: disallow ternary operators
-        description_zh: 禁用三元操作符
+        description_zh: 禁止三元操作符
         fixable: false
         name: no-ternary
         recommended: false
       - description: disallow trailing whitespace at the end of lines
-        description_zh: 禁用行尾空格
+        description_zh: 禁止行尾空格
         fixable: true
         name: no-trailing-spaces
         recommended: false
@@ -1009,7 +1006,7 @@ categories:
         name: no-whitespace-before-property
         recommended: false
       - description: enforce the location of single-line statements
-        description_zh: enforce the location of single-line statements
+        description_zh: 强制单行语句的位置
         fixable: true
         name: nonblock-statement-body-position
         recommended: false
@@ -1037,7 +1034,7 @@ categories:
         name: one-var
         recommended: false
       - description: require or disallow newlines around variable declarations
-        description_zh: require or disallow newlines around variable declarations
+        description_zh: 要求或禁止变量声明旁换行
         fixable: true
         name: one-var-declaration-per-line
         recommended: false
@@ -1057,7 +1054,7 @@ categories:
         name: padded-blocks
         recommended: false
       - description: require or disallow padding lines between statements
-        description_zh: require or disallow padding lines between statements
+        description_zh: 要求或禁止语句之间的填充行
         fixable: true
         name: padding-line-between-statements
         recommended: false
@@ -1080,7 +1077,7 @@ categories:
         name: require-jsdoc
         recommended: false
       - description: require or disallow semicolons instead of ASI
-        description_zh: require or disallow semicolons instead of ASI
+        description_zh: 要求或禁止分号取代 ASI（自动分号插入）
         fixable: true
         name: semi
         recommended: false
@@ -1095,7 +1092,7 @@ categories:
         name: semi-style
         recommended: false
       - description: require object keys to be sorted
-        description_zh: require object keys to be sorted
+        description_zh: 要求对象键被排序
         fixable: false
         name: sort-keys
         recommended: false
@@ -1138,12 +1135,12 @@ categories:
         name: spaced-comment
         recommended: false
       - description: enforce spacing around colons of switch statements
-        description_zh: enforce spacing around colons of switch statements
+        description_zh: 强制 switch 语句附近的空格
         fixable: true
         name: switch-colon-spacing
         recommended: false
       - description: require or disallow spacing between template tags and their literals
-        description_zh: require or disallow spacing between template tags and their literals
+        description_zh: 要求或禁止模板标签与其文字之间的间距
         fixable: true
         name: template-tag-spacing
         recommended: false
@@ -1158,7 +1155,7 @@ categories:
         name: wrap-regex
         recommended: false
   - description: 'These rules relate to ES6, also known as ES2015:'
-    description_zh: '这些规则只与 ES6 有关, 即通常所说的 ES2015：'
+    description_zh: '这些规则与 ES6 有关, 它也称 ES2015：'
     name: ECMAScript 6
     rules:
       - description: require braces around arrow function bodies
@@ -1195,7 +1192,7 @@ categories:
         name: no-class-assign
         recommended: true
       - description: disallow arrow functions where they could be confused with comparisons
-        description_zh: disallow arrow functions where they could be confused with comparisons
+        description_zh: 禁止可能与比较混淆的箭头函数
         fixable: true
         name: no-confusing-arrow
         recommended: false
@@ -1210,17 +1207,17 @@ categories:
         name: no-dupe-class-members
         recommended: true
       - description: disallow duplicate module imports
-        description_zh: disallow duplicate module imports
+        description_zh: 禁止重复的模块导入
         fixable: false
         name: no-duplicate-imports
         recommended: false
       - description: disallow `new` operators with the `Symbol` object
-        description_zh: disallow `new` operators with the `Symbol` object
+        description_zh: 禁止对 `Symbol` 对象使用 `new` 操作符
         fixable: false
         name: no-new-symbol
         recommended: true
       - description: disallow specified modules when loaded by `import`
-        description_zh: disallow specified modules when loaded by `import`
+        description_zh: 禁止用 `import` 加载指定的模块
         fixable: false
         name: no-restricted-imports
         recommended: false
@@ -1235,7 +1232,7 @@ categories:
         name: no-useless-computed-key
         recommended: false
       - description: disallow unnecessary constructors
-        description_zh: 禁用不必要的构造函数
+        description_zh: 禁止不必要的构造函数
         fixable: false
         name: no-useless-constructor
         recommended: false
@@ -1283,8 +1280,7 @@ categories:
           disallow `parseInt()` in favor of binary, octal, and hexadecimal
           literals
         description_zh: >-
-          disallow `parseInt()` in favor of binary, octal, and hexadecimal
-          literals
+          禁止 `parseInt()` 支持二进制、八进制和十六进制字面量
         fixable: true
         name: prefer-numeric-literals
         recommended: false
@@ -1312,8 +1308,7 @@ categories:
           enforce spacing between rest and spread operators and their
           expressions
         description_zh: >-
-          enforce spacing between rest and spread operators and their
-          expressions
+          强制 rest 与 spread 操作符及其表达式之间的空格
         fixable: true
         name: rest-spread-spacing
         recommended: false
@@ -1323,7 +1318,7 @@ categories:
         name: sort-imports
         recommended: false
       - description: require symbol descriptions
-        description_zh: require symbol descriptions
+        description_zh: 要求符号描述
         fixable: false
         name: symbol-description
         recommended: false
