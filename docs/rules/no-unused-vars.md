@@ -112,7 +112,7 @@ function getY([, y]) {
 
 In environments outside of CommonJS or ECMAScript modules, you may use `var` to create a global variable that may be used by other scripts. You can use the `/* exported variableName */` comment block to indicate that this variable is being exported and therefore should not be considered unused.
 
-在 CommonJS 或者 ECMAScript 模块外部，可用 `var`创建一个被其他模块代码引用的变量。你也可以用 `/* exported variableName */` 注释快表明此变量已导出，因此此变量不会被认为是未被使用过的。
+在 CommonJS 或者 ECMAScript 模块外部，可用 `var`创建一个被其他模块代码引用的变量。你也可以用 `/* exported variableName */` 注释块表明此变量已导出，因此此变量不会被认为是未被使用过的。
 
 Note that `/* exported */` has no effect for any of the following:
 

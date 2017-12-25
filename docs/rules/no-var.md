@@ -6,7 +6,7 @@ layout: doc
 
 # require `let` or `const` instead of `var` (no-var)
 
-# 要求使用 `let` 或 `const` 而不是 `var`
+# 要求使用 `let` 或 `const` 而不是 `var` (no-var)
 
 (fixable) The `--fix` option on the [command line](../user-guide/command-line-interface#fix) can automatically fix some of the problems reported by this rule.
 
