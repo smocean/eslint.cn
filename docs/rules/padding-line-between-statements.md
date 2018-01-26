@@ -40,8 +40,8 @@ This rule does nothing if no configuration.
 
 如果没有配置，该规则不生效。
 
-A configuration is an object which has 3 properties; `blankLine`, `prev` and `next`. For example, `{ blankLine: "always", prev: "var", next: "return" }` is meaning "it requires one or more blank lines between a variable declaration and a `return` statement."
-You can supply any number of configurations. If an statement pair matches multiple configurations, the last matched configuration will be used.
+A configuration is an object which has 3 properties; `blankLine`, `prev` and `next`. For example, `{ blankLine: "always", prev: "var", next: "return" }` means "it requires one or more blank lines between a variable declaration and a `return` statement."
+You can supply any number of configurations. If a statement pair matches multiple configurations, the last matched configuration will be used.
 
 该规则有一个对象配置，有三个属性：`blankLine`、`prev` 和 `next`。例如 `{ blankLine: "always", prev: "var", next: "return" }` 意为 “要求在变量声明和 `return` 语句之间有一行或多行空行。”你可以在配置中提供任意数量。如果语句匹配多个配置，则使用最后匹配的配置。
 
@@ -113,8 +113,10 @@ You can supply any number of configurations. If an statement pair matches multip
     - `"import"` 是 `import` 语句。
     - `"let"` is `let` variable declarations.
     - `"let"` 是 `let` 变量声明。
-    - `"multiline-block-like"` is block like statements. This is the same as `block-like` type, but only the block is multiline.
-    - `"multiline-block-like"` 是像块的语句。它和 `block-like` 类型相同，只是它是多行块。
+    - `"multiline-block-like"` is block like statements. This is the same as `block-like` type, but only if the block is multiline.
+    - `"multiline-block-like"` 是像块的语句。它和 `block-like` 类型相同，但只应用于多行块。
+    - `"multiline-expression"` is expression statements. This is the same as `expression` type, but only if the statement is multiline.
+    - `"multiline-expression"` 是表达式语句。同 `expression` 类型一下，但只应用于多行语句。
     - `"return"` is `return` statements.
     - `"return"` 是 `return` 语句。
     - `"switch"` is `switch` statements.
@@ -295,9 +297,9 @@ If you don't want to notify warnings about linebreaks, then it's safe to disable
 
 如果你不想受到关于换行的通知，可以禁用此规则。
 
-[lines-around-directive]: http://eslint.org/docs/rules/lines-around-directive
-[newline-after-var]: http://eslint.org/docs/rules/newline-after-var
-[newline-before-return]: http://eslint.org/docs/rules/newline-before-return
+[lines-around-directive]: https://eslint.org/docs/rules/lines-around-directive
+[newline-after-var]: https://eslint.org/docs/rules/newline-after-var
+[newline-before-return]: https://eslint.org/docs/rules/newline-before-return
 [requirePaddingNewLineAfterVariableDeclaration]: http://jscs.info/rule/requirePaddingNewLineAfterVariableDeclaration
 [requirePaddingNewLinesAfterBlocks]: http://jscs.info/rule/requirePaddingNewLinesAfterBlocks
 [disallowPaddingNewLinesAfterBlocks]: http://jscs.info/rule/disallowPaddingNewLinesAfterBlocks

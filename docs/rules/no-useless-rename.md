@@ -56,11 +56,11 @@ This rule allows for more fine-grained control with the following options:
 
 * `ignoreImport`: When set to `true`, this rule does not check imports
 
-* `ignoreImport`: 当设置为 `true`, 这条规则不会检查 imports
+* `ignoreImport`: 当设置为 `true`，这条规则不会检查 imports
 
 * `ignoreExport`: When set to `true`, this rule does not check exports
 
-* `ignoreExport`: 当设置为 `true`, 这条规则不会检查 exports
+* `ignoreExport`: 当设置为 `true`，这条规则不会检查 exports
 
 * `ignoreDestructuring`: When set to `true`, this rule does not check destructuring assignments
 
@@ -122,7 +122,7 @@ function foo({ bar: baz }) {}
 
 Examples of **correct** code for this rule with `{ ignoreImport: true }`:
 
-设置 `{ ignoreImport: true }` 时 **正确** 代码示例：
+选项 `{ ignoreImport: true }` 的 **正确** 代码示例：
 
 ```js
 /*eslint no-useless-rename: ["error", { ignoreImport: true }]*/
@@ -132,7 +132,7 @@ import { foo as foo } from "bar";
 
 Examples of **correct** code for this rule with `{ ignoreExport: true }`:
 
-设置 `{ ignoreExport: true }` 时 **正确** 代码示例：
+选项 `{ ignoreExport: true }` 时 **正确** 代码示例：
 
 ```js
 /*eslint no-useless-rename: ["error", { ignoreExport: true }]*/
@@ -143,7 +143,7 @@ export { foo as foo } from "bar";
 
 Examples of **correct** code for this rule with `{ ignoreDestructuring: true }`:
 
-设置 `{ ignoreDestructuring: true }` 时 **正确** 代码示例：
+选项 `{ ignoreDestructuring: true }` 时 **正确** 代码示例：
 
 ```js
 /*eslint no-useless-rename: ["error", { ignoreDestructuring: true }]*/

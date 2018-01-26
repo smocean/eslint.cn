@@ -45,6 +45,8 @@ This rule has a string option:
 
 * `"always"` (default) enforces newlines between the operands of a ternary expression.
 * `"always"` (默认) 强制三元操作数之间有换行。
+* `"always-multiline"` enforces newlines between the operands of a ternary expression if the expression spans multiple lines.
+* `"always-multiline"` 如果表达式跨越多个行，则在三元表达式的操作数之间强制换行。
 * `"never"` disallows newlines between the operands of a ternary expression (enforcing that the entire ternary expression is on one line).
 * `"never"` 禁止三元操作数之间有换行 (强制整个三元表达式在同一行).
 
@@ -86,6 +88,50 @@ foo > bar ?
         value1 :
         value2) :
     value3;
+```
+
+### always-multiline
+
+Examples of **incorrect** code for this rule with the `"always-multiline"` option:
+
+```js
+/*eslint multiline-ternary: ["error", "always-multiline"]*/
+
+foo > bar ? value1 :
+    value2;
+
+foo > bar ?
+    value1 : value2;
+
+foo > bar &&
+    bar > baz ? value1 : value2;
+```
+
+Examples of **correct** code for this rule with the `"always-multiline"` option:
+
+```js
+/*eslint multiline-ternary: ["error", "always-multiline"]*/
+
+foo > bar ? value1 : value2;
+
+foo > bar ?
+    value1 :
+    value2;
+
+foo > bar ?
+    (baz > qux ? value1 : value2) :
+    value3;
+
+foo > bar ?
+    (baz > qux ?
+        value1 :
+        value2) :
+    value3;
+
+foo > bar &&
+    bar > baz ?
+        value1 :
+        value2;
 ```
 
 ### never

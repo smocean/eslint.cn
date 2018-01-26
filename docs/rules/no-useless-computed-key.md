@@ -32,7 +32,7 @@ var foo = {"a": "b"};
 
 This rule disallows unnecessary usage of computed property keys.
 
-这条规则禁止使用不必要的计算属性
+这条规则禁止使用不必要的计算属性。
 
 ## Examples
 

@@ -28,14 +28,12 @@ This rule has either a string option:
 
 该规则有一个字符串选项：
 
-* `"always"` requires line breaks inside braces
-
+* `"always"` requires line breaks inside brackets
 * `"always"` 要求在括号之间换行
-
-
-* `"never"` disallows line breaks inside braces
-
+* `"never"` disallows line breaks inside brackets
 * `"never"` 禁止在括号之间换行
+* `"consistent"` requires consistent usage of linebreaks for each pair of brackets. It reports an error if one bracket in the pair has a linebreak inside it and the other bracket does not.
+* `"consistent"` 对每个括号要求使用一致的换行符。如果一个括号有换行符，另一个没有，则会报错。
 
 Or an object option (Requires line breaks if any of properties is satisfied. Otherwise, disallows line breaks):
 
@@ -134,6 +132,53 @@ var d = [1,
 var e = [function foo() {
     dosomething();
 }];
+```
+
+### consistent
+
+Examples of **incorrect** code for this rule with the `"consistent"` option:
+
+选项 `"consistent"` 的 **错误** 代码示例：
+
+```js
+/*eslint array-bracket-newline: ["error", "consistent"]*/
+
+var a = [1
+];
+var b = [
+    1];
+var c = [function foo() {
+    dosomething();
+}
+]
+var d = [
+    function foo() {
+        dosomething();
+    }]
+```
+
+Examples of **correct** code for this rule with the `"consistent"` option:
+
+选项 `"consistent"` 的 **正确** 代码示例：
+
+```js
+/*eslint array-bracket-newline: ["error", "consistent"]*/
+
+var a = [];
+var b = [
+];
+var c = [1];
+var d = [
+    1
+];
+var e = [function foo() {
+    dosomething();
+}];
+var f = [
+    function foo() {
+        dosomething();
+    }
+];
 ```
 
 ### multiline

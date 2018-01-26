@@ -12,9 +12,9 @@ layout: doc
 
 (fixable) [命令行](../user-guide/command-line-interface#fix)中的 `--fix` 选项可以自动修复一些该规则报告的问题。
 
-This rule improves readability by enforcing lines between class members. It will not check empty lines before the first member and after the last member, since that is already taken care of by `padded-blocks`.
+This rule improves readability by enforcing lines between class members. It will not check empty lines before the first member and after the last member, since that is already taken care of by padded-blocks.
 
-该规则通过强制类成员间的空行来提高可读性。该规则不会检查第一个成员和最后一个成员，因为 `padded-blocks` 规则已经对其有限制。
+该规则通过强制类成员间的空行来提高可读性。该规则不会检查第一个成员和最后一个成员，因为这已经由填充的块进行了处理。
 
 ## Rule Details
 
