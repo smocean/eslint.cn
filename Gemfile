@@ -1,6 +1,6 @@
 source 'https://ruby.taobao.org'
 
-gem 'jekyll', '~> 3.0.1'
+gem 'jekyll', '~> 3.0.5'
 
 group :jekyll_plugins do
   gem 'algoliasearch-jekyll', '~> 0.7.0'
