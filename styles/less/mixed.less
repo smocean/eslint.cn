@@ -1,7 +1,4 @@
----
----
-
-@mixin mixed-default {
+.mixed-default {
     opacity: 0.36;
     -webkit-transition: opacity 200ms ease;
     transition: opacity 200ms ease;
@@ -21,7 +18,7 @@
 .lang-mixed {
     h1 {
         &:nth-of-type(2n+1) {
-            @include mixed-default;
+            .mixed-default;
         }
     }
     
@@ -29,7 +26,7 @@
     p:nth-of-type(2n+1),
     li:nth-of-type(2n+1),
     li:nth-of-type(2n+1) p:only-of-type {
-        @include mixed-default;
+        .mixed-default;
     }
 
     h1:nth-of-type(2n+1):only-of-type,
@@ -121,16 +118,16 @@
     }
 }
 
-p.incorrect + p + div + div + div .highlight, /* vars-on-top */
-p.incorrect + p + div + div + div .highlight, /* vars-on-top */
-p.incorrect + p + div + div .highlight, /* no-continue */
-p.incorrect + p + div .highlight {
+p.incorrect + p + div + div + div pre, /* vars-on-top */
+p.incorrect + p + div + div + div pre, /* vars-on-top */
+p.incorrect + p + div + div pre, /* no-continue */
+p.incorrect + p + div pre {
   background-color: #fff6f6; /* light red hsl(0,100%,98%) */
 }
 
-p.correct + p + div + div + div .highlight, /* vars-on-top */
-p.correct + p + div + div .highlight, /* no-continue */
-p.correct + p + div .highlight {
+p.correct + p + div + div + div pre, /* vars-on-top */
+p.correct + p + div + div pre, /* no-continue */
+p.correct + p + div pre {
   background-color: #f6fff6; /* light green hsl(120,100%,98%) */
 }
 
@@ -164,9 +161,11 @@ p.fixable + p:before {
 }
 
 p.incorrect + p:before {
+  color: #dc143c;
   content: "\e126"; /* thumbs-down */
 }
 
 p.correct + p:before {
+  color: #228b22;
   content: "\e125"; /* thumbs-up */
 }
